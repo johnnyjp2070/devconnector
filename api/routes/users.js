@@ -45,6 +45,8 @@ router.post(
           .json({ errors: [{ msg: 'User Already Exists' }] })
       }
 
+      console.log('After User Verification')
+
       //Code for Gravatar
 
       const avatar = gravatar.url(email, {
